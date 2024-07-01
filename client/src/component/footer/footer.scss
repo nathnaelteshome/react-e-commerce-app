@@ -1,0 +1,75 @@
+@import '../../breakpoints';
+
+.footerContainer {
+    display: flex;
+    @include mobile {
+        flex-direction: column;
+    }
+    
+    .leftContainer {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        padding: 2rem;
+        .logo {}
+        
+        .decsription {
+            margin: 2rem 0rem;
+        }
+        
+        .socialContainer {
+            display: flex;
+            .socialIcon {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 4rem;
+                height: 4rem;
+                border-radius: 50%;
+                color: white;
+                margin-right: 2rem;
+            }
+        }
+    }
+    
+    .centerContainer {
+        flex: 1;
+        padding: 2rem;
+        @include mobile {
+            display: none;
+        }
+        .title{
+            margin-bottom: 3rem;
+        }
+        .list{
+            // background-color: green;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            .listItem{
+                // background-color: rgb(128, 115, 0);
+                width: 50%;
+                margin-bottom: 1rem;
+            }
+        }
+    }
+    
+    .rightContainer {
+        padding: 2rem;
+        flex: 1;
+        @include mobile {
+            background-color: rgb(255, 248, 248);
+        }
+        .title{}
+        .contactItem{
+            margin-bottom: 2rem;
+            display: flex;
+            align-items: center;
+        }
+        .paymentImg{
+            width: 50%;
+        }
+    }
+}

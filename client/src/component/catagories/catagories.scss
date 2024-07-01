@@ -1,0 +1,12 @@
+@import '../../breakpoints';
+
+.catagoriesContainer{
+    display: flex;
+    padding: 2rem;
+    justify-content: space-between;
+    @include mobile {
+        padding: 0;
+        flex-direction: column;
+    }
+    // background-color: red;
+}

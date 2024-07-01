@@ -1,0 +1,50 @@
+@import '../../breakpoints';
+
+
+.registerContainer{
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(rgba(255,255,255,0.5),rgba(255,255,255,0.5)), url("https://images.pexels.com/photos/6984661/pexels-photo-6984661.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940") center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .registerwrapper{
+        padding: 2rem;
+        width: 40%;
+        background-color: white;
+        @include mobile {
+            width: 75%;
+        }
+        
+        .registertitle{
+            font-size: 2.4rem;
+            font-weight: 300;
+        }
+        .registerBox{
+            display: flex;
+            flex-wrap: wrap;
+            .registerInput{
+                flex: 1;
+                min-width: 40%;
+                margin: 2rem 1rem 0rem 0rem;
+                padding: 1rem;
+            }
+            .registerAgreement{
+                font-size: 1.2rem;
+                margin: 2rem 0rem;
+            }
+            .registerButton{
+                width: 40%;
+                border: none;
+                padding: 1.5rem 2rem;
+                background-color: teal;
+                color: white;
+            
+            }
+
+        }
+    }
+
+}

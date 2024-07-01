@@ -1,0 +1,159 @@
+@import '../../breakpoints';
+
+
+.cartContainer {
+    .cartWrapper {
+        padding: 2rem;
+
+        @include mobile {
+            padding: 1rem;
+        }
+
+        .cartTitle {
+            font-weight: 300;
+            text-align: center;
+        }
+
+        .cartTop {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 2rem;
+
+            .topButton {
+                padding: 1rem;
+                font-weight: 600;
+                cursor: pointer;
+            }
+
+            .topTexts {
+                .topText {
+                    text-decoration: underline;
+                    cursor: pointer;
+                    margin: 0rem 1rem;
+
+                    @include mobile {
+                        display: none;
+                    }
+
+                }
+            }
+        }
+
+        .cartBottom {
+            display: flex;
+            justify-content: space-between;
+
+            @include mobile {
+                flex-direction: column;
+            }
+
+            .bottomInfo {
+                flex: 3;
+
+                .product {
+                    display: flex;
+                    justify-content: space-between;
+                    
+                    @include mobile {
+                        flex-direction: column;
+                    }
+                    
+                    .productImage {
+                        width: 20rem;
+                    }
+                    
+                    .productDetails {
+                        // background-color: red;
+                        flex: 2;
+                        display: flex;
+                        
+                        .details {
+                            display: flex;
+                            padding: 2rem;
+                            justify-content: space-around;
+                            flex-direction: column;
+                            .productName {}
+    
+                            .productId {}
+    
+                            .productColor {
+                                width: 2rem;
+                                height: 2rem;
+                                border-radius: 50%;
+                            }
+                            .productSize {}
+                        }
+
+
+
+                    }
+
+                    .priceDetails {
+                        flex: 1;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        flex-direction: column;
+
+                        .productAmountContainer {
+                            display: flex;
+                            align-items: center;
+                            margin-bottom: 2rem;
+
+                            .productAmount {
+                                font-size: 2.4rem;
+                                margin: 0.5rem;
+                                @include mobile {
+                                    margin: 0.5rem 1.5rem;
+                                }
+                            }
+                        }
+
+                        .productPrice {
+                            font-size: 3rem;
+                            font-weight: 200;
+                            @include mobile {
+                                margin-bottom: 2rem;
+                            }
+
+                        }
+                    }
+                }
+            }
+
+            .bottomSummary {
+                flex: 1;
+                border: 0.5px solid lightgray;
+                border-radius: 1rem;
+                padding: 2rem;
+                height: 50vh;
+
+                .summaryTitle {
+                    font-weight: 200;
+                }
+
+                .summaryItem {
+                    margin: 3rem 0rem;
+                    display: flex;
+                    height: 3rem;
+                    justify-content: space-between;
+
+                    .summaryItem {}
+
+                    .summaryItemPrice {}
+                }
+
+                .checkoutButton {
+                    width: 100%;
+                    background-color: black;
+                    color: white;
+                    font-weight: 600;
+                    padding: 1rem;
+
+                }
+            }
+        }
+
+    }
+}

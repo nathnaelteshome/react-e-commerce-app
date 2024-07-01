@@ -1,0 +1,49 @@
+@import '../../breakpoints';
+
+
+.productListContainer{
+    .title{
+        margin: 2rem;
+    }
+    .filterContainer{
+        margin: 2rem;
+        display: flex;
+        justify-content: space-between;
+        
+        .filter{
+            margin: 2rem;
+            @include mobile {
+                margin: 0 2rem;
+                display: flex;
+                flex-direction: column;
+            }
+            .filterText{
+                margin-right: 2rem;
+                font-size: 2rem;
+                font-weight: 600;
+                @include mobile {
+                    margin-right: 0;
+
+                }
+            }
+                .select{
+                    // background-color: red;
+                    padding: 1rem;
+                    margin-right: 2rem;
+                    @include mobile {
+                        margin: 1rem 0;
+                        
+                    }
+
+                    .option{
+
+                    }
+                }
+
+
+            
+
+        }
+    }
+
+}
