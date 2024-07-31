@@ -32,10 +32,14 @@ const Slider = () => {
             className={`slide`}
           >
             <div className="imgContainer">
-              <img className="sliderImage" src={sliderItem.img} alt="" />
+              <img
+                className="sliderImage"
+                style={{ height: "100%" }}
+                src={sliderItem.img}
+                alt=""
+              />
             </div>
             <div className="infoContainer">
-              
               <h1 className="infoTitle">{sliderItem.title}</h1>
               <p className="infoDesc">{sliderItem.desc}</p>
               <button className="infoButton">SHOW NOW</button>
